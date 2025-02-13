@@ -53,7 +53,7 @@ $("document").ready(()=> {
           yes.removeClass("pressed");
         } , 350);
        } else {
-        alert("Stop breaking No button. Move your cursor a bit or use your damn laptop... ");
+        alert("Stop breaking No button. Move your cursor a bit... Push your luck now..🤪 ");
        }
     
       
