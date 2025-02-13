@@ -1,0 +1,249 @@
+body {
+    background-color: #6a0c8c;
+background-image: linear-gradient(79deg, #510b6f 0%, #784BA0 50%, #4c085d 100%);
+	background-size: 400% 400%;
+	animation: gradient 8s ease infinite;
+    text-align: center;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.fireworks{
+    width:330px;
+    height:330px;
+    visibility: hidden;
+}
+
+h1{
+    font-family: "Great Vibes", serif;
+    font-weight: 600;
+    font-size: 4rem;
+    font-style:normal;
+    margin: 15px;
+  }
+
+  .bigsize{
+    font-size: 5rem;
+
+  }
+
+
+.container{
+    margin: 2% 0 0;
+}
+
+.mainpics{
+    width:360px;
+    height:260px;
+    border: solid 10px white;
+    border-radius: 7%;
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #9D50BB 0%, #6E48AA  51%, #9D50BB  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   border-radius: 10px;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ footer{
+    color:white;
+    visibility: hidden;
+ }
+
+ .pressed {
+    box-shadow: 0 0 60px white;
+    background-color: grey;
+  }
+
+
+  
+  @media(max-width:411px){
+
+    .container{
+   margin: 25% auto 0;
+    }
+
+    .fireworks{
+        width:80px;
+        height:80px;
+    }
+    
+    h1{
+        font-size: 1.5rem;
+        margin:10px;
+    }
+
+    .bigsize{
+        font-size: 1.8rem;
+        font-weight: 600;
+      }
+      
+    
+.mainpics {
+    width:120px;
+    height:90px;
+    border: solid 1px white;
+}
+
+.btn{
+    display: block;
+    width: 50%;
+ margin:0 auto;
+  }
+
+  .btn-grad{
+    margin-top:8px;
+  }
+
+  p{
+    font-size: 12px;
+  }
+
+  }
+
+
+   
+  @media(min-width:412px) and (max-width:500px){
+
+    .container{
+        margin: 15% auto 0;
+         }
+
+    .fireworks{
+        width:110px;
+        height:110px;
+    }
+    
+    h1{
+        font-size: 1.7rem;
+    }
+
+    .bigsize{
+        font-size: 2.2rem;
+        font-weight: 600;
+      }
+      
+    
+.mainpics {
+    width:160px;
+    height:120px;
+    border: solid 2px white;
+}
+
+p{
+    font-size: 15px;
+  }
+
+  }
+
+@media (min-width:501px) and (max-width:650px){
+    
+.container{
+    margin:10% auto 0;
+     }
+
+.fireworks{
+    width:140px;
+    height:140px;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+.bigsize{
+    font-size: 2.7rem;
+    font-weight: 600;
+  }
+  
+
+.mainpics {
+width:190px;
+height:150px;
+border: solid 3px white;
+}
+
+}
+
+@media (min-width:651px) and (max-width:800px) {
+
+    .container{
+        margin:3% auto 0;
+     }
+    
+    .fireworks{
+        width:200px;
+        height:200px;
+    }
+    
+    h1{
+        font-size: 3rem;
+    }
+    
+    .bigsize{
+        font-size: 3.5rem;
+        font-weight: 600;
+      }
+      
+    
+    .mainpics {
+    width:220px;
+    height:170px;
+    border: solid 3px white;
+    }
+
+}
+
+@media (min-width:801px) and (max-width:1064px){
+
+    .container{
+        margin:2% auto 0;
+     }
+    
+    .fireworks{
+        width:235px;
+        height:235px;
+    }
+    
+    h1{
+        font-size: 3.6rem;
+    }
+    
+    .bigsize{
+        font-size: 4rem;
+        font-weight: 600;
+      }
+    
+    .mainpics {
+    width:290px;
+    height:220px;
+    border: solid 3px white;
+    }
+
+
+
+
+}
