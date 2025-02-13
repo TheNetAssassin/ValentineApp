@@ -32,13 +32,19 @@ $("document").ready(()=> {
     no.click(()=> {
         clicks++;
        if(clicks<=6) {
-        if(clicks === 6) {
-            no.mouseover(()=>{ 
-                yes.css("position","absolute");
-                img.attr("src","https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTI2NncyZms0aWxlcm42dndkYWF1OG5pZDNuczg1dDdudWZ6dHJxZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BSiEuA9dvmUy4nQiJ7/giphy.gif");
-                h1.text("Oops..Looks like you have no other option..Say yes!!!");
-            });
+       if(clicks === 6) { 
+            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+               no.css("visibility","hidden");
+               } else {
+            no.mouseover(() => {
+                var x = Math.random() * (window.innerWidth - no.outerWidth()) + 'px'; 
+                var y = Math.random() * (window.innerHeight - no.outerHeight()) + 'px'; 
+                     no.css("position","absolute");
+                     no.css("top", y  );
+                     no.css("left" , x )
+                   });
            }
+        }
         img.attr("src",imgarr[clicks]);
         h1.text(txtarr[clicks]);
         h1.css("font-weight", "400");
